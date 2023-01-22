@@ -89,4 +89,33 @@ def settingd(request):
 
 
 def changename(request):
-        return render(request, 'index.html')
+    phone=request.GET['phonekarbar']
+    newname=request.GET['newname']
+    fun=request.GET['fun']
+    if fun=='name':
+        karbar.objects.filter(phone=phone).update(name=newname)
+    else:
+        if fun=='fname':
+            karbar.objects.filter(phone=phone).update(lastname=newname)
+        else:
+            if fun=='phone':
+                if(newname.isnumeric()):
+                    karbar.objects.filter(phone=phone).update(phone=newname)
+                    phone=newname
+            else:
+                if fun=='address':
+                    karbar.objects.filter(phone=phone).update(address=newname)
+                else:
+                    if fun=='email':
+                        karbar.objects.filter(phone=phone).update(email=newname)
+                    else:
+                        if fun=='pass':
+                            karbar.objects.filter(phone=phone).update(password=newname)
+                        else:
+                            if fun=='link':
+                                karbar.objects.filter(phone=phone).update(linkclass=newname)
+
+    context = {
+        "karbar": karbar.objects.get(phone=phone)
+    }
+    return render(request, 'settingd.html', context)
