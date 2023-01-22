@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static%}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="{% static 'scripts/script.js' %}"></script>
+    <script src="jquery.js"></script>
+        <link rel="stylesheet" href="{% static 'styles/style_settingd.css'%}">
+    <title>Document</title>
+</head>
+<body>
+    <center class="header"> <h1>اطلاعات دانش آموز</h1> </center>
+
+    <div class="mosh">
+        <label>نام : </label>{{karbar.name}}<img src="{% static 'photos/edit.svg' %}" class="edit" alt="" onclick="namedit()"><br/>
+        <label>نام خانوادگی : </label>{{karbar.lastname}}<img src="{% static 'photos/edit.svg' %}" class="edit" alt=""><br/>
+        <label>شماره تلفن : </label>{{karbar.phone}}<img src="{% static 'photos/edit.svg' %}" class="edit" alt=""><br/>
+        <label>آدرس : </label>{{karbar.address}}<img src="{% static 'photos/edit.svg' %}" class="edit" alt=""><br/>
+        <label>ایمیل: </label>{{karbar.email}}<img src="{% static 'photos/edit.svg' %}" class="edit" alt=""><br/>
+        <label>رمز عبور: </label>{{karbar.password}}<img src="{% static 'photos/edit.svg' %}" class="edit" alt=""><br/>
+        <label>لینک کلاس : </label>{{karbar.linkclass}}<img src="{% static 'photos/edit.svg' %}" class="edit" alt=""><br/>
+    </div>
+
+    <a href="manager" class="button_back"><p>برگشت</p></a>
+
+</body>
+</html>

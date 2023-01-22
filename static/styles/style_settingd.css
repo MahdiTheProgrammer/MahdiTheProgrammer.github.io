@@ -1,0 +1,59 @@
+body{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: 2.8cm 7cm 2cm 15cm;
+    direction: rtl;
+    background: linear-gradient(-45deg,#7f8c8d,#ffeaa7, #f9b434);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+    font-family: sepid;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.mosh{
+    grid-column: 1/4;
+    padding: 10px;
+    border-radius: 10px;
+    grid-row: 2;
+    background-color:#ffeaa7;
+    margin-top: 10px;
+    min-width: 300px;
+
+}
+.header{
+    grid-column:1/-1 ;
+    padding: 10px;
+    border-radius: 10px;
+    grid-row: 1;
+    background-color:#ffeaa7;
+
+}
+
+.button_back{
+    grid-row:3 ;
+}
+
+@font-face {
+    font-family: sepid;
+    src: url(../fonts/B\ Koodak\ Bold_YasDL.com.ttf);
+}
+
+
+.edit{
+    max-width: 20px;
+}
+
+
+
+
+

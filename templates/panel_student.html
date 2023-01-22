@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'styles/style_panel.css'%}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="pcontainer">
+        
+        <div class="header2">
+              <p class="title"> آموزشگاه زبان سپید</p>
+        </div>
+        <div class="header1">
+            <a href="index"><p class="home_button">خانه</p></a>
+        </div>
+        <div class="main">
+            <div class="mosh">
+                <label>نام : </label>{{karbar.name}}<br/>
+                <label>نام خانوادگی : </label>{{karbar.lastname}}<br/>
+                <label>شماره تلفن : </label>{{karbar.phone}}<br/>
+                <label>آدرس : </label>{{karbar.address}}<br/>
+                <label>ایمیل: </label>{{karbar.email}}<br/>
+                <label>رمز عبور: </label>{{karbar.password}}<br/>
+                <label>لینک کلاس : </label>{{karbar.linkclass}}<br/>
+            </div>
+        </div>
+
+
+        <div class="footer">
+
+        </div>
+
+
+    </div>
+
+
+</body>
+</html>

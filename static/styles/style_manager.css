@@ -1,0 +1,82 @@
+.header{
+    background-color:#f5ba4b;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+    grid-column: 1/-1;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: 2.8cm 3cm 2cm 15cm;
+}
+body{
+    direction: rtl;
+    background: linear-gradient(-45deg,#7f8c8d,#ffeaa7, #f9b434);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+    font-family: sepid;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.main{
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: 1.5cm 1.0cm;
+    margin-top: 14px;
+}
+
+
+.ll{
+    grid-column: 1/4;
+    grid-row: 1;
+
+}
+.bb{
+    display: flex;
+    grid-row: 2;
+    background-color: azure;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;    
+}
+a{
+    text-decoration: none;
+    font-family: sepid;
+}
+
+
+.list_students{
+    grid-row: 4;
+    background-color:#f5ba4b;
+    grid-column: 1/6;
+    min-width: 300px;
+    border-radius: 5px;
+}
+
+.dd{
+    background-color: antiquewhite;
+    margin: 7px;
+    padding:4px;
+    border-radius: 4px;
+}
+.linkd{
+    text-decoration: none;
+}
+@font-face {
+    font-family: sepid;
+    src: url(../fonts/B\ Koodak\ Bold_YasDL.com.ttf);
+}

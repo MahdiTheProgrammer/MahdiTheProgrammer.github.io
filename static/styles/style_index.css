@@ -1,0 +1,128 @@
+body {
+    background-color: #dfd1a4;
+    background: linear-gradient(-45deg,#7f8c8d,#ffeaa7, #f9b434);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.mcontainer{
+    display: grid;
+    font-size: 20px;
+    width: 100%;
+    max-width: 1300px;
+    text-align: center;
+    margin: 0px auto;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: 4cm 15cm  5.9cm;
+    gap: 20px;
+}
+
+.title{
+    align-self: flex-start;
+    justify-items: flex-start;
+}
+
+
+
+.header2 {
+    grid-column: 1/-1;
+    padding: 20px;
+    background-image: linear-gradient(to bottom right,#ffeaa7, #f5ba4b);
+    border-radius: 30px;
+    margin: 6px;
+    font-size: 0.7cm;
+    font-family: sepid;
+    direction: rtl;
+    
+}
+.button{
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    margin-top: 15 px;
+
+
+}
+.button> a{
+    font-size: 20px;
+
+
+
+}
+
+@font-face {
+    font-family: sepid;
+    src: url(../fonts/B\ Koodak\ Bold_YasDL.com.ttf);
+}
+
+.mcontent{
+    grid-column: 1/13;
+    grid-row: 2;
+    clear: both;
+}
+
+
+.mfooter{
+    min-width: 400px;
+    grid-column: 1/-1;
+    grid-row: 3;
+    padding: 30px;
+    text-align: center;
+    border: 2px solid rgb(164, 164, 164);
+    border-radius: 5px;
+    font-family: sepid ;
+    font-size:20px;
+    clear: both;
+    
+}
+.carousel-inner{
+    border-radius: 50px ;
+
+}
+.mamad1{
+    border-top-left-radius: 56px;
+    border-bottom-left-radius: 56px;
+}
+
+.mamad2{
+    border-top-right-radius: 56px;
+    border-bottom-right-radius: 56px;
+}
+.register_button {
+    margin-left: 10px;
+    border-radius: 10px;
+    padding: 1px; 
+    font-family: sepid;
+}
+
+.panel_button {
+    margin-left: 10px;
+    border-radius: 10px;
+    padding: 1px;
+    font-family: sepid;
+}
+.home_button {
+    margin-left: 10px;
+    border-radius: 10px;
+    padding: 1px;
+    font-family: sepid; 
+}
+
+.mslider{
+    grid-column: 1/13;
+    grid-row: 2;
+    margin:0px 10px;
+
+}
